@@ -1,0 +1,4 @@
+[submodule "CMP"]
+	path = CMP
+url=/Users/hkornblum/Documents/cmp-test-app/cmptestapp/CMP
+	branch = feature/MOBL-1746

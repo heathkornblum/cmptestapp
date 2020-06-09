@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewTcfSharedPrefs">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewTCSharedPrefsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/IABTCF_PurposeLegitimateInterests_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_PurposeLegitimateInterests"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PurposeLegitimateInterests_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PurposeConsents_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_CmpSdkID_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="IABTCF_CmpSdkID"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_CmpSdkID_Display"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/IABTCF_TCString_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_TCString"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_TCString_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_UseNonStandardStacks_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_VendorConsents_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_VendorLegitimateInterests_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_VendorConsents_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_UseNonStandardStacks_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_TCString_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_UseNonStandardStacks_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_PurposeOneTreatment_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_UseNonStandardStacks_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PurposeOneTreatment_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherCC_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PurposeOneTreatment_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherCC_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_PolicyVersion_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_gdprApplies_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PolicyVersion_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_CmpSdkVersion_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PolicyVersion_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_CmpSdkVersion_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_CmpSdkID_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_CmpSdkVersion_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_CmpSdkID_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_gdprApplies_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherCC_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_gdprApplies_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherRestrictions_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_PublisherRestrictions"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherRestrictions_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_SpecialFeaturesOptIns_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_SpecialFeaturesOptIns_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_SpecialFeaturesOptIns"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_SpecialFeaturesOptIns_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PurposeLegitimateInterests_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_PurposeConsents_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PurposeLegitimateInterests_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PurposeConsents_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_VendorLegitimateInterests_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_VendorLegitimateInterests"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_VendorLegitimateInterests_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_VendorConsents_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_TCString_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_VendorConsents_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_TCString_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_PurposeOneTreatment_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_PurposeOneTreatment"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PurposeOneTreatment_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherCC_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_PolicyVersion_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_PolicyVersion"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PolicyVersion_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_CmpSdkVersion_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherCC_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_PublisherCC"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherCC_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_gdprApplies_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_UseNonStandardStacks_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_UseNonStandardStacks"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_UseNonStandardStacks_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PurposeOneTreatment_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_VendorConsents_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_VendorConsents"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_VendorConsents_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_TCString_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_PurposeConsents_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_PurposeConsents"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PurposeConsents_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_VendorLegitimateInterests_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_PurposeLegitimateInterests_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_SpecialFeaturesOptIns_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PurposeLegitimateInterests_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_SpecialFeaturesOptIns_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherRestrictions_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_SpecialFeaturesOptIns_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherRestrictions_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherConsent_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherRestrictions_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherConsent_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_PublisherConsent"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherConsent_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherRestrictions_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherCustomPurposesLegitimateInterests_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherCustomPurposesLegitimateInterests_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherCustomPurposesLegitimateInterests_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_PublisherCustomPurposesLegitimateInterests"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherCustomPurposesLegitimateInterests_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherCustomPurposesConsents_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherCustomPurposesConsents_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherCustomPurposesLegitimateInterests_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherCustomPurposesConsents_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherCustomPurposesConsents_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_PublisherCustomPurposesConsents"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherCustomPurposesConsents_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherLegitimateInterests_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherLegitimateInterests_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherCustomPurposesConsents_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherLegitimateInterests_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherLegitimateInterests_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_PublisherLegitimateInterests"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherLegitimateInterests_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherConsent_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_PublisherConsent_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PublisherLegitimateInterests_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PublisherConsent_Label" />
+
+        <TextView
+            android:id="@+id/IABTCF_CmpSdkVersion_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_CmpSdkVersion"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_CmpSdkVersion_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_CmpSdkID_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_gdprApplies_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="IABTCF_gdprApplies"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_gdprApplies_Display"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_PolicyVersion_Display" />
+
+        <TextView
+            android:id="@+id/IABTCF_VendorLegitimateInterests_Display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/IABTCF_PurposeConsents_Label"
+            app:layout_constraintTop_toBottomOf="@+id/IABTCF_VendorLegitimateInterests_Label" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

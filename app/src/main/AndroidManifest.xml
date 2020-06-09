@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.conversantmedia.cmptestapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+<!--        <meta-data android:name="CNVR_CMP_Prevent_Key_Back" android:value="@string/CNVR_CMP_Prevent_Key_Back" />-->
+<!--        <meta-data android:name="CNVR_CMP_Banner_Layout" android:value="@string/CNVR_CMP_Banner_Layout" />-->
+<!--        <meta-data android:name="CNVR_CMP_Branding_Img" android:value="@string/CNVR_CMP_Branding_Img" />-->
+        <meta-data android:name="CNVR_CMP_Country_Code" android:value="@string/CNVR_CMP_Country_Code" />
+<!--        <meta-data android:name="CNVR_CMP_CSS_Override" android:value="@string/CNVR_CMP_CSS_Override" />-->
+<!--        <meta-data android:name="CNVR_CMP_Custom_UI_Background_Color" android:value="@string/CNVR_CMP_Custom_UI_Background_Color" />-->
+<!--        <meta-data android:name="CNVR_CMP_Custom_UI_Border_Radius_Button" android:value="@string/CNVR_CMP_Custom_UI_Border_Radius_Button" />-->
+<!--        <meta-data android:name="CNVR_CMP_Custom_UI_Link_Color" android:value="@string/CNVR_CMP_Custom_UI_Link_Color" />-->
+<!--        <meta-data android:name="CNVR_CMP_Custom_UI_Primary_Color" android:value="@string/CNVR_CMP_Custom_UI_Primary_Color" />-->
+<!--        <meta-data android:name="CNVR_CMP_Custom_UI_Text_Color" android:value="@string/CNVR_CMP_Custom_UI_Text_Color" />-->
+        <meta-data android:name="CNVR_CMP_GDPR_Applies_Globally" android:value="@string/CNVR_CMP_GDPR_Applies_Globally" />
+<!--        <meta-data android:name="CNVR_CMP_ID" android:value="@string/CNVR_CMP_ID" />-->
+        <meta-data android:name="CNVR_CMP_In_App_Device_ID" android:value="@string/CNVR_CMP_In_App_Device_ID" />
+<!--        <meta-data android:name="CNVR_CMP_In_App_Stored_Version" android:value="@string/CNVR_CMP_In_App_Stored_Version" />-->
+        <meta-data android:name="CNVR_CMP_In_App_Show_UI_Fn_Key" android:value="@string/CNVR_CMP_In_App_Show_UI_Fn_Key" />
+        <meta-data android:name="CNVR_CMP_Is_Service_Specific" android:value="@string/CNVR_CMP_Is_Service_Specific" />
+<!--        <meta-data android:name="CNVR_CMP_Lang" android:value="@string/CNVR_CMP_Lang" />-->
+        <meta-data android:name="CNVR_CMP_Legal_Bases_Features" android:value="@string/CNVR_CMP_Legal_Bases_Features" />
+        <meta-data android:name="CNVR_CMP_Legal_Bases_Purpose_Consent" android:value="@string/CNVR_CMP_Legal_Bases_Purpose_Consent" />
+        <meta-data android:name="CNVR_CMP_Legal_Bases_Purpose_Legitimate_Interest" android:value="@string/CNVR_CMP_Legal_Bases_Purpose_Legitimate_Interest" />
+        <meta-data android:name="CNVR_CMP_Legal_Bases_Special_Feature" android:value="@string/CNVR_CMP_Legal_Bases_Special_Feature" />
+        <meta-data android:name="CNVR_CMP_Legal_Bases_Special_Purpose" android:value="@string/CNVR_CMP_Legal_Bases_Special_Purpose" />
+        <meta-data android:name="CNVR_CMP_Legal_Bases_Purpose" android:value="@string/CNVR_CMP_Legal_Bases_Purpose" />
+<!--        <meta-data android:name="CNVR_CMP_Legal_Name" android:value="@string/CNVR_CMP_Legal_Name" />-->
+<!--        <meta-data android:name="CNVR_CMP_Min_Show_Days" android:value="@string/CNVR_CMP_Min_Show_Days" />-->
+<!--        <meta-data android:name="CNVR_CMP_On_GVL" android:value="@string/CNVR_CMP_On_GVL" />-->
+        <meta-data android:name="CNVR_CMP_Policy_URL" android:value="@string/CNVR_CMP_Policy_URL" />
+<!--        <meta-data android:name="CNVR_CMP_Text_Landing_Body_P1" android:value="@string/CNVR_CMP_Text_Landing_Body_P1" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Landing_Body_P2" android:value="@string/CNVR_CMP_Text_Landing_Body_P2" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Landing_CTA" android:value="@string/CNVR_CMP_Text_Landing_CTA" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Landing_Review_Link" android:value="@string/CNVR_CMP_Text_Landing_Review_Link" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Landing_See_More" android:value="@string/CNVR_CMP_Text_Landing_See_More" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Landing_See_Less" android:value="@string/CNVR_CMP_Text_Landing_See_Less" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Landing_Title" android:value="@string/CNVR_CMP_Text_Landing_Title" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Companies_Header_Consent" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Companies_Header_Feature" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Companies_Header_Leg_Int" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Companies_Header_Special_Purpose" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Companies_Header_Special_Feature" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Companies_Privacy_Policy_Link" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Companies_Tab_Title" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Header_Consent" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Header_Feature" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Header_Leg_Int" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Header_Special_Feature" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Header_Special_Purpose" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Label_Feature" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Label_Purpose" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Label_Special_Feature" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Label_Special_Purpose" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Legal_Description_Hide" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Legal_Description_Show" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Company_List_Hide" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Company_List_Show" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Company_List_No" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Tabs_Purposes_Tab_Title" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Buttons_Allow" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Buttons_Deny" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Buttons_Opt_Out" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Footer_Allow_All" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Footer_Deny_All" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Footer_CTA" android:value="" />-->
+<!--        <meta-data android:name="CNVR_CMP_Text_Review_Intro_Body" android:value="" />-->
+
+<!--        <meta-data android:name="CNVR_CMP_Vendors" android:value="@string/CNVR_CMP_Vendors" />-->
+        <meta-data android:name="CNVR_CMP_Config_Version" android:value="@string/CNVR_CMP_Config_Version" />
+
+    </application>
+
+</manifest>

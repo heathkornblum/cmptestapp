@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/viewTcfSharedPrefs"
+        android:name="com.conversantmedia.cmptestapp.viewTcfSharedPrefs"
+        android:label="View Shared Preferences"
+        tools:layout="@layout/fragment_view_tcf_shared_prefs" />
+    <fragment
+        android:id="@+id/home"
+        android:name="com.conversantmedia.cmptestapp.Home"
+        android:label="CMP Test App"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_viewTcfSharedPrefs"
+            app:destination="@id/viewTcfSharedPrefs"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+</navigation>

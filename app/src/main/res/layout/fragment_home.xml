@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/homeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/viewTCSharedPrefs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="View TC Shared Prefs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/popUI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Pop UI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editConfig" />
+
+    <Button
+        android:id="@+id/deleteTCString"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Delete TC String"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popUI" />
+
+    <Button
+        android:id="@+id/setConfigVersion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Set Config Version to 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deleteTCString" />
+
+    <TextView
+        android:id="@+id/tcStringLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TC String:"
+        app:layout_constraintStart_toStartOf="@+id/cmpVersionLabel"
+        app:layout_constraintTop_toBottomOf="@+id/cmpVersionLabel" />
+
+    <TextView
+        android:id="@+id/tcStringDisplay"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TC String Not Set"
+        app:layout_constraintEnd_toEndOf="@+id/setConfigVersion"
+        app:layout_constraintStart_toStartOf="@+id/tcStringLabel"
+        app:layout_constraintTop_toBottomOf="@+id/tcStringLabel" />
+
+        <Button
+            android:id="@+id/editConfig"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="Upload a New Config"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewTCSharedPrefs" />
+
+    <TextView
+        android:id="@+id/cmpVersionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="CMP Version:"
+        app:layout_constraintStart_toStartOf="@+id/setConfigVersion"
+        app:layout_constraintTop_toBottomOf="@+id/setConfigVersion" />
+
+    <TextView
+        android:id="@+id/cmpVersionDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="@string/versionNotSet"
+        app:layout_constraintStart_toEndOf="@+id/cmpVersionLabel"
+        app:layout_constraintTop_toTopOf="@+id/cmpVersionLabel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">CMP Test App</string>
+    <string name="action_settings">Settings</string>
+    <string name="Title">CMP Test</string>
+
+    <string name="CNVR_CMP_In_App_Device_ID">00000000-0000-0000-0000-000000000000</string>
+    <string name="CNVR_CMP_Prevent_Key_Back">false</string>
+    <string name="CNVR_CMP_Banner_Layout">true</string>
+    <string name="CNVR_CMP_Branding_Img"></string>
+    <string name="CNVR_CMP_Country_Code">US</string>
+    <string name="CNVR_CMP_CSS_Override"></string>
+    <string name="CNVR_CMP_Custom_UI_Background_Color">#FFF</string>
+    <string name="CNVR_CMP_Custom_UI_Border_Radius_Button">4px</string>
+    <string name="CNVR_CMP_Custom_UI_Link_Color">#0b4d95</string>
+    <string name="CNVR_CMP_Custom_UI_Primary_Color">#0b4d95</string>
+    <string name="CNVR_CMP_Custom_UI_Text_Color">#333</string>
+    <string name="CNVR_CMP_GDPR_Applies_Globally">true</string>
+    <string name="CNVR_CMP_ID">1</string>
+    <string name="CNVR_CMP_In_App_Stored_Version">1</string>
+    <string name="CNVR_CMP_In_App_Show_UI_Fn_Key">my_great_function</string>
+    <string name="CNVR_CMP_Is_Service_Specific">false</string>
+    <string name="CNVR_CMP_Lang">EN</string>
+    <string name="CNVR_CMP_Legal_Bases_Features">1,2,3</string>
+    <string name="CNVR_CMP_Legal_Bases_Purpose_Consent">1</string>
+    <string name="CNVR_CMP_Legal_Bases_Purpose_Legitimate_Interest">11</string>
+    <string name="CNVR_CMP_Legal_Bases_Special_Feature">11</string>
+    <string name="CNVR_CMP_Legal_Bases_Special_Purpose">11</string>
+    <string name="CNVR_CMP_Legal_Bases_Purpose">11</string>
+    <string name="CNVR_CMP_Legal_Name"></string>
+    <string name="CNVR_CMP_Min_Show_Days">30</string>
+    <string name="CNVR_CMP_On_GVL">false</string>
+    <string name="CNVR_CMP_Policy_URL">https:\/\/www.example.com\/some\/path\/to\/policyUrl</string>
+    <string name="CNVR_CMP_Text_Landing_Body_P1">"Privacy body 1"</string>
+    <string name="CNVR_CMP_Text_Landing_Body_P2">"Privacy body 2"</string>
+    <string name="CNVR_CMP_Text_Landing_CTA">ACCEPT &amp; CONTINUE</string>
+    <string name="CNVR_CMP_Text_Landing_Review_Link">Review Purposes &amp; Companies</string>
+    <string name="CNVR_CMP_Text_Landing_See_More">See More</string>
+    <string name="CNVR_CMP_Text_Landing_See_Less">See Less</string>
+    <string name="CNVR_CMP_Text_Landing_Title">We value your privacy.</string>
+    <string name="CNVR_CMP_Text_Review_Allow_All">Allow All</string>
+    <string name="CNVR_CMP_Text_Review_Companies_Consent_Header">Purposes that require your consent:</string>
+    <string name="CNVR_CMP_Text_Review_Companies_Leg_Int_Header">Companies Legitimate interest purposes that don\'t require your consent, but you can opt out:</string>
+    <string name="CNVR_CMP_Text_Review_Companies_Tab_Title">Companies</string>
+    <string name="CNVR_CMP_Text_Review_CTA">SAVE &amp; CONTINUE</string>
+    <string name="CNVR_CMP_Text_Review_Deny_All">Deny All</string>
+    <string name="CNVR_CMP_Text_Review_Intro_Body">privacy stuff</string>
+    <string name="CNVR_CMP_Text_Review_Privacy_Policy_Link">View privacy policy</string>
+    <string name="CNVR_CMP_Text_Review_Purpose_Consent_Header">Companies that require your consent</string>
+    <string name="CNVR_CMP_Text_Review_Purpose_Leg_Int_Header">Companies using legitimate interest that don\'t require your consent, but you can opt out:</string>
+    <string name="CNVR_CMP_Text_Review_Purposes_Tab_Title">Purposes</string>
+    <string name="CNVR_CMP_Vendors">[24]</string>
+    <string name="CNVR_CMP_Config_Version">1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tcStringNotSet">TC String Not Set</string>
+    <string name="versionNotSet">Version Not Set</string>
+    <string name="valueNotSet">Value Not Set</string>
+
+</resources>

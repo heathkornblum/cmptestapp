@@ -1,0 +1,3 @@
+include ':app', ':cmp'
+rootProject.name='CMP Test App'
+project(':cmp').projectDir=new File('CMP/app')
